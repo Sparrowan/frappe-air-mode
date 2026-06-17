@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "prompt",
- "creation": "2026-06-08 11:34:23.757109",
+ "creation": "2026-06-17 09:00:00.000000",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -40,7 +40,7 @@
    "link_fieldname": "airline"
   }
  ],
- "modified": "2026-06-17 14:47:38.522958",
+ "modified": "2026-06-17 09:20:00.000000",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airline",

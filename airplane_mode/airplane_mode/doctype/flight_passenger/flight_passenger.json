@@ -1,7 +1,7 @@
 {
  "actions": [],
  "autoname": "autoincrement",
- "creation": "2026-06-08 18:15:37.059646",
+ "creation": "2026-06-17 10:30:00.000000",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
@@ -39,7 +39,7 @@
    "link_fieldname": "passenger"
   }
  ],
- "modified": "2026-06-17 14:59:05.543733",
+ "modified": "2026-06-17 10:50:00.000000",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Flight Passenger",
