@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "{flight}-{source_airport_code}-to-{destination_airport_code}-{###}",
+ "autoname": ".{flight}.-.{source_airport_code}.-to-.{destination_airport_code}.-.###",
  "creation": "2026-06-17 13:34:49.934177",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -65,7 +65,7 @@
   {
    "fieldname": "destination_airport",
    "fieldtype": "Link",
-   "label": "Destination Airport ",
+   "label": "Destination Airport",
    "options": "Airport",
    "reqd": 1
   },
@@ -107,6 +107,7 @@
    "reqd": 1
   },
   {
+   "default": "Booked",
    "fieldname": "status",
    "fieldtype": "Select",
    "label": "Status",

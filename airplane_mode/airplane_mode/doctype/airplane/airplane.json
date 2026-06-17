@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": ".{airline}.-.#####",
+ "autoname": ".{airline}.-.###",
  "creation": "2026-06-08 11:54:56.931418",
  "doctype": "DocType",
  "engine": "InnoDB",
