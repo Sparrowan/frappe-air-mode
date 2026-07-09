@@ -1,0 +1,43 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+{% set airplane = frappe.get_doc("Airplane", doc.airplane) %}
+<div class="flight-detail">
+	<h2>Flight {{ doc.name }}</h2>
+	<table class="table table-bordered" style="max-width: 600px;">
+		<tr>
+			<th>Airline</th>
+			<td>{{ airplane.airline }}</td>
+		</tr>
+		<tr>
+			<th>Airplane</th>
+			<td>{{ doc.airplane }}</td>
+		</tr>
+		<tr>
+			<th>From</th>
+			<td>{{ doc.source_airport_code }}</td>
+		</tr>
+		<tr>
+			<th>To</th>
+			<td>{{ doc.destination_airport_code }}</td>
+		</tr>
+		<tr>
+			<th>Date of Departure</th>
+			<td>{{ frappe.utils.format_date(doc.date_of_departure, "d MMMM, YYYY") }}</td>
+		</tr>
+		<tr>
+			<th>Time of Departure</th>
+			<td>{{ doc.time_of_departure }}</td>
+		</tr>
+		<tr>
+			<th>Duration</th>
+			<td>{{ frappe.utils.format_duration(doc.duration) }}</td>
+		</tr>
+		<tr>
+			<th>Status</th>
+			<td>{{ doc.status }}</td>
+		</tr>
+	</table>
+	<a href="/book-flight-ticket-web-form?flight={{ doc.name }}&flight_price=500" class="btn btn-primary">Book Flight</a>
+</div>
+{% endblock %}
