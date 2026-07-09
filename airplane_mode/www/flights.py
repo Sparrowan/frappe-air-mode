@@ -12,7 +12,7 @@ def get_context(context):
 		],
 		order_by="date_of_departure asc",
 	)
-	# Attach airline name to each flight via the airplane link
 	for flight in context.flights:
-		airplane = frappe.get_value("Airplane", flight.airplane, "airline")
-		flight.airline = airplane or ""
+		flight.airline = frappe.get_value("Airplane", flight.airplane, "airline") or ""
+		# Use route field if set, otherwise build from name (for existing records)
+		flight.detail_url = flight.route or f"flights/{flight.name}"
