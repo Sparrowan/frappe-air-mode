@@ -1,0 +1,61 @@
+{
+ "accept_payment": 0,
+ "allow_comments": 0,
+ "allow_delete": 0,
+ "allow_edit": 1,
+ "allow_incomplete": 0,
+ "allow_multiple": 1,
+ "allow_print": 0,
+ "creation": "2026-07-09 11:00:00.000000",
+ "doc_type": "Airplane Ticket",
+ "docstatus": 0,
+ "doctype": "Web Form",
+ "introduction_text": "Fill in the details below to book your flight ticket.",
+ "is_standard": 1,
+ "login_required": 1,
+ "max_attachment_size": 0,
+ "modified": "2026-07-09 11:30:00.000000",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Book Flight Ticket Web Form",
+ "owner": "Administrator",
+ "published": 1,
+ "route": "book-flight-ticket-web-form",
+ "show_sidebar": 0,
+ "success_url": "",
+ "title": "Book Flight Ticket Web Form",
+ "web_form_fields": [
+  {
+   "fieldname": "flight",
+   "fieldtype": "Link",
+   "hidden": 0,
+   "label": "Flight",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Airplane Flight",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "passenger",
+   "fieldtype": "Link",
+   "hidden": 0,
+   "label": "Passenger",
+   "max_length": 0,
+   "max_value": 0,
+   "options": "Flight Passenger",
+   "read_only": 0,
+   "reqd": 1
+  },
+  {
+   "fieldname": "flight_price",
+   "fieldtype": "Currency",
+   "hidden": 0,
+   "label": "Flight Price",
+   "max_length": 0,
+   "max_value": 0,
+   "read_only": 1,
+   "reqd": 1
+  }
+ ]
+}

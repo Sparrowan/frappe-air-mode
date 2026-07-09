@@ -1,0 +1,28 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "doc.status == 'Scheduled'",
+ "creation": "2026-07-09 12:00:00.000000",
+ "date_changed": "date_of_departure",
+ "days_in_advance": 1,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Airplane Flight",
+ "enabled": 1,
+ "event": "Days Before",
+ "is_standard": 1,
+ "message": "Flight {{ doc.name }} ({{ doc.source_airport_code }} to {{ doc.destination_airport_code }}) departs in 24 hours on {{ frappe.utils.format_date(doc.date_of_departure, 'd MMMM, YYYY') }} at {{ doc.time_of_departure }}.",
+ "modified": "2026-07-09 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Airplane Mode",
+ "name": "Airplane Flight Departure Notification",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "subject": "Departs in 24 hours!"
+}
