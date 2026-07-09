@@ -6,6 +6,13 @@ from frappe.website.website_generator import WebsiteGenerator
 
 
 class AirplaneFlight(WebsiteGenerator):
+	website = frappe._dict(
+		page_title_field="name",
+		condition_field="is_published",
+		template="airplane_mode/doctype/airplane_flight/airplane_flight.html",
+		no_cache=1,
+	)
+
 	def before_save(self):
 		if not self.route:
 			self.route = f"flights/{self.name}"
